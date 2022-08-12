@@ -132,6 +132,9 @@ public interface {{classname}} {
         {{#summary}}
         summary = "{{{.}}}",
         {{/summary}}
+        {{#description}}
+        description= "{{{notes}}}",
+        {{/description}}
         {{#vendorExtensions.x-tags}}
         tags = { {{#vendorExtensions.x-tags}}"{{tag}}"{{^-last}}, {{/-last}}{{/vendorExtensions.x-tags}} },
         {{/vendorExtensions.x-tags}}
